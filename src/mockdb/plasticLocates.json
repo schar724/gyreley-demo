@@ -1,0 +1,54 @@
+[
+  {
+    "identifier": "GLOC-2024-1172",
+    "inspectionStatusId": "4A133D05-C639-4ADF-B540-BB9FC95255F0",
+    "contactName": "Test",
+    "notes": "Notes",
+    "inspectionStatusName": "Review",
+    "deviceId": "                                    ",
+    "plasticLocateId": "64ea72fa-93b6-4cf6-a422-451f5de14640",
+    "requestorId": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+    "contactDetail": "Details",
+    "scheduledDate": "",
+    "deviceMountId": "                                    ",
+    "placeId": "                                    ",
+    "clientId": "GYRELEYOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+    "inspectorId": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+    "inspectorName": "Scott Charles",
+    "requestorName": "Scott Charles",
+    "completionDate": "",
+    "place": {
+      "formattedAddress": "800 Macleod Trail SE, Calgary, AB T2G 2M3, Canada",
+      "lat": 51.045346,
+      "lng": -114.0564366,
+      "placeId": "ChIJaQBXKQBwcVMR72bfLLoz4FA",
+      "url": "https://maps.google.com/?q=800+Macleod+Trail+SE,+Calgary,+AB+T2G+2M3,+Canada&ftid=0x5371700029570069:0x50e033ba2cdf66ef"
+    }
+  },
+  {
+    "identifier": "GLOC-2024-1173",
+    "inspectionStatusId": "8A500B63-DEF0-4478-BAB0-A9F10A353A55",
+    "contactName": "Completed",
+    "notes": "Notes",
+    "inspectionStatusName": "Completed",
+    "deviceId": "                                    ",
+    "plasticLocateId": "64ea72fa-93b6-4cf6-a422-451f5de14641",
+    "requestorId": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+    "contactDetail": "Details",
+    "scheduledDate": "",
+    "deviceMountId": "                                    ",
+    "placeId": "                                    ",
+    "clientId": "GYRELEYOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
+    "inspectorId": "RYZ3n2adE82Ap9WjHKOeAKzQYnYv",
+    "inspectorName": "John Johnson",
+    "requestorName": "Scott Charles",
+    "completionDate": "",
+    "place": {
+      "placeId": "ChIJDZyw7FNwcVMRd8CmMc5hRa0",
+      "formattedAddress": "635 56 Ave SW, Calgary, AB T2V 0G9, Canada",
+      "lng": -114.078438,
+      "url": "https://maps.google.com/?q=635+56+Ave+SW,+Calgary,+AB+T2V+0G9,+Canada&ftid=0x53717053ecb09c0d:0xad4561ce31a6c077",
+      "lat": 51.003084
+    }
+  }
+]

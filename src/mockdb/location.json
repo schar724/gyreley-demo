@@ -1,0 +1,24 @@
+[
+  {
+    "firstName": "Scott",
+    "lastName": "Charles",
+    "personId": "1234",
+    "lastLocationDate": "2024-12-12T00:00:00.000Z",
+    "lastLocation": "",
+    "location": {
+      "lat": 51.02163,
+      "lng": -114.10998
+    }
+  },
+  {
+    "firstName": "John",
+    "lastName": "Johnson",
+    "personId": "RYZ3n2adE82Ap9WjHKOeAKzQYnYv",
+    "lastLocationDate": "2024-12-12T00:00:00.000Z",
+    "lastLocation": "",
+    "location": {
+      "lat": 51.003084,
+      "lng": -114.078438
+    }
+  }
+]

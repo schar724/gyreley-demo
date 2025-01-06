@@ -1,0 +1,68 @@
+[
+  {
+    "firstName": "Client",
+    "lastName": "Admin",
+    "email": "clientadmin@loki.ca",
+    "phoneNumber": "9876543214",
+    "uid": "QfMqFIDvNctVqvmAVFa3YyQ04rhi",
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "roles": [
+      "clientAdmin"
+    ],
+    "authStatus": "active"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Johnson",
+    "email": "john@johnson.ca",
+    "phoneNumber": "5556320158",
+    "uid": "RYZ3n2adE82Ap9WjHKOeAKzQYnYv",
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "roles": [
+      "sysAdmin",
+      "clientAdmin",
+      "csr",
+      "user"
+    ],
+    "authStatus": "active"
+  },
+  {
+    "firstName": "CSR",
+    "lastName": "Gyreley",
+    "email": "csr@gyreley.ca",
+    "phoneNumber": "7894561234",
+    "uid": "WLy6PbuYms1iMQUmy650U12ojnZ7",
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "roles": [
+      "csr"
+    ],
+    "authStatus": "active"
+  },
+  {
+    "firstName": "Tim",
+    "lastName": "Thompson",
+    "email": "tim@thompson.ca",
+    "phoneNumber": "1234569875",
+    "uid": "dImVMnWxpAaStMlWZCaUFoRe63nW",
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "roles": [
+      "sysAdmin"
+    ],
+    "authStatus": "pending"
+  },
+  {
+    "firstName": "Scott",
+    "lastName": "Charles",
+    "email": "scott.charles.dev@gmail.com",
+    "phoneNumber": "4039876545",
+    "uid": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "roles": [
+      "sysAdmin",
+      "clientAdmin",
+      "csr",
+      "user"
+    ],
+    "authStatus": "active"
+  }
+]

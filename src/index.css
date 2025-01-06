@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {  
+  --background-hue: 0;
+  --background-saturation: 0%;
+  --background-lightness: 100%;
+
+  --foreground-hue: 0;
+  --foreground-saturation: 0%;
+  --foreground-lightness: 0%;
+  
+  --primary-hue: 220;
+  --primary-saturation: 47%;
+  --primary-lightness: 11%;
+
+  --primary-foreground-hue: 220;
+  --primary-foreground-saturation: 10%;
+  --primary-foreground-lightness: 65%;
+
+  --secondary-hue: 243;
+  --secondary-saturation: 77%;
+  --secondary-lightness: 59%;
+
+  --tertiary-hue: 217;
+  --tertiary-saturation: 92%;
+  --tertiary-lightness: 60%;
+
+  --destructive-hue: 0;
+  --destructive-saturation: 72%;
+  --destructive-lightness: 51%;
+
+  --background: hsl(var(--background-hue), var(--background-saturation), var(--background-lightness));
+  --background-hover: hsl(var(--background-hue), var(--background-saturation), calc(var(--background-lightness) - 1%));
+
+  --foreground: hsl(var(--foreground-hue), var(--foreground-saturation), var(--foreground-lightness));
+  --foreground-hover: hsl(var(--foreground-hue), var(--foreground-saturation), calc(var(--foreground-lightness) + 40%));
+
+  --foreground-muted: hsl(var(--foreground-hue), var(--foreground-saturation), calc(var(--foreground-lightness) + 30%));
+  --foreground-muted-hover: hsl(var(--foreground-hue), var(--foreground-saturation), calc(var(--foreground-lightness)));
+
+  --primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness));
+  --primary-foreground: hsl(var(--primary-foreground-hue), var(--primary-foreground-saturation), var(--primary-foreground-lightness));
+  --primary-hover: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness) + 5%));
+  --primary-active: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness) + 10%)); 
+  --primary80: hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.8);
+
+  --secondary: hsl(var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness));
+  --secondary-hover: hsl(var(--secondary-hue), var(--secondary-saturation), calc(var(--secondary-lightness) + 5%));
+  --secondary-foreground: hsl(0, 0%, 100%);
+
+  --tertiary: hsl(var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness));
+  --tertiary-foreground: hsl(0, 0%, 100%);
+
+
+  --destructive: hsl(var(--destructive-hue), var(--destructive-saturation), var(--destructive-lightness));
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --destructive-hover: hsl(var(--destructive-hue), var(--destructive-saturation), calc(var(--destructive-lightness) + 5%)); 
+}
+
+@layer base { 
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply flex gap-x-3 p-2 text-sm font-semibold leading-6 text-primary-foreground rounded-md hover:text-white hover:bg-primary-hover;
+  }
+  .admin-table-element  {
+    @apply px-1 py-2 text-sm text-foreground-muted hover:bg-background-hover
+  }
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}

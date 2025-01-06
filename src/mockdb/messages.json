@@ -1,0 +1,566 @@
+{
+  "-A7d3pFGq5xrqDrvzIWM": {
+    "-A7d4mLJx8pDs7FnYkM1": {
+      "createdAt": "2024-11-01T15:40:15.100Z",
+      "name": "Active User",
+      "read": false,
+      "recipient": "3",
+      "sender": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "text": "Hi, I'm having trouble setting up my device."
+    },
+    "-A7d4nUJ09qKf6BnZmR2": {
+      "createdAt": "2024-11-01T15:40:20.300Z",
+      "name": "Active Support",
+      "read": true,
+      "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "sender": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+      "text": "I'd be happy to help. Could you tell me which part of the setup you're having trouble with?"
+    },
+    "-A7d4pW8CBnqE7FfYnS3": {
+      "createdAt": "2024-11-01T15:40:30.500Z",
+      "name": "Active User",
+      "read": false,
+      "recipient": "3",
+      "sender": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "text": "I can't get it to connect to Wi-Fi."
+    },
+    "-A7d4qZL2x9Rc5JnZnT4": {
+      "createdAt": "2024-11-01T15:40:35.700Z",
+      "name": "Active Support",
+      "read": true,
+      "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "sender": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+      "text": "Understood. Have you tried resetting the device and entering the Wi-Fi credentials again?"
+    },
+    "-A7d4rMGcBs9JkBqZnT5": {
+      "createdAt": "2024-11-01T15:40:50.200Z",
+      "name": "Active User",
+      "read": false,
+      "recipient": "3",
+      "sender": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "text": "Yes, I did, but it keeps saying 'Connection failed'."
+    },
+    "-A7d4sXKcBx8PnDkZoT6": {
+      "createdAt": "2024-11-01T15:41:05.300Z",
+      "name": "Active Support",
+      "read": true,
+      "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "sender": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+      "text": "Thanks for letting me know. Please make sure the Wi-Fi network is 2.4GHz, as the device might not support 5GHz networks."
+    },
+    "-A7d4uOLcBn6XqLnZoT7": {
+      "createdAt": "2024-11-01T15:41:15.800Z",
+      "name": "Active User",
+      "read": false,
+      "recipient": "3",
+      "sender": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "text": "Oh, I see. My network is 5GHz. I'll try switching to a 2.4GHz network."
+    },
+    "-A7d4vMGcBn8LnBnZoT8": {
+      "createdAt": "2024-11-01T15:41:25.900Z",
+      "name": "Active Support",
+      "read": true,
+      "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "sender": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+      "text": "Great! Let me know if that works."
+    },
+    "-A7d4wXLcBx7PnFqZoT9": {
+      "createdAt": "2024-11-01T15:42:00.000Z",
+      "name": "Active User",
+      "read": false,
+      "recipient": "3",
+      "sender": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "text": "It worked! Thank you so much for your help."
+    },
+    "-A7d4yOLcBn6KqRnZoT0": {
+      "createdAt": "2024-11-01T15:42:10.500Z",
+      "name": "Active Support",
+      "read": true,
+      "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+      "sender": "mWQiarISEcAlgbFSiTgsWuAbxTny",
+      "text": "You're welcome! Is there anything else I can assist you with?"
+    }
+  },
+  "-O8h0pWGq0yrqUrvyIZI": {
+    "-O8h0pYeciHoycZ9ynfv": {
+      "createdAt": "2024-10-08T16:47:30.888Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "How can I help you?"
+    },
+    "-O8h0pu1NGa18r7_Zivv": {
+      "createdAt": "2024-10-08T16:47:32.314Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Device Overview and Features"
+    },
+    "-O8h0pvfhUukRxmBoU1z": {
+      "createdAt": "2024-10-08T16:47:32.385Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Which part of the overview would you like more information on?"
+    },
+    "-O8h0qKf6CRP_RynLmA7": {
+      "createdAt": "2024-10-08T16:47:34.087Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Sonicfinder 1000 Parts"
+    },
+    "-O8h0qLbzzc9lE1ClDz2": {
+      "createdAt": "2024-10-08T16:47:34.111Z",
+      "link": "<a href=\"http://localhost:5173/help/pfmanual/#cl2\">Sonicfinder 1000 Parts</a>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "You can find more information here: "
+    },
+    "-O8h0qLs1JKmIq6l9t39": {
+      "createdAt": "2024-10-08T16:47:34.111Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Is there anything else I can assist you with?"
+    },
+    "-O8h0qxmx974pemFFsos": {
+      "createdAt": "2024-10-08T16:47:36.652Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Yes, I have another question"
+    },
+    "-O8h0qzMSO7GJbfwWXDu": {
+      "createdAt": "2024-10-08T16:47:36.719Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "How can I help you?"
+    },
+    "-O8h0rOR_9cz_s6hdD0r": {
+      "createdAt": "2024-10-08T16:47:38.424Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Setting up the Device"
+    },
+    "-O8h0rPyNxoqJquKZFrb": {
+      "createdAt": "2024-10-08T16:47:38.485Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h0ruQA-dw72bjArWI": {
+      "createdAt": "2024-10-08T16:47:40.532Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Setting Time Zone"
+    },
+    "-O8h0rvCJCBf_CmyRM1x": {
+      "createdAt": "2024-10-08T16:47:40.587Z",
+      "element": "<p class=\"p-3\">On the SF1000, the default time zone is UTC. To change the time zone:</p><ul class=\"p-4 list-decimal list-inside\"><li>Navigate to the menu. Select the ‘Set time zone’ option.</li><li>Press the UP and DOWN arrow keys to toggle the offset from UTC until the desired offset has been reached.</li></ul>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "This is what I found: "
+    },
+    "-O8h0rvK31KSHtOjBFOh": {
+      "createdAt": "2024-10-08T16:47:40.587Z",
+      "link": "<a href=\"http://localhost:5173/help/pfmanual/#time-zone\">Setting Time Zone</a>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "You can find more information here: "
+    },
+    "-O8h0rvXf2atQaPC8ch-": {
+      "createdAt": "2024-10-08T16:47:40.590Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Is there anything else I can assist you with?"
+    },
+    "-O8h1roZu11jcC5ea9dR": {
+      "createdAt": "2024-10-08T16:52:02.294Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Is there anything else I can assist you with?"
+    }
+  },
+  "-O8h1wNLXBJI_QjGf1lt": {
+    "-O8h1wOdwSgZCZZcHz8I": {
+      "createdAt": "2024-10-08T16:52:21.048Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "How can I help you?"
+    },
+    "-O8h1wadFG2qZ2joEUWo": {
+      "createdAt": "2024-10-08T16:52:21.897Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Parts of the Device"
+    },
+    "-O8h1wbbHktmtbep6UQR": {
+      "createdAt": "2024-10-08T16:52:21.919Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Which part of the Sonicfinder device are you having trouble with?"
+    },
+    "-O8h1wlZ9edGlWGOmpkR": {
+      "createdAt": "2024-10-08T16:52:22.596Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Screw-in Spike"
+    },
+    "-O8h1wm1vJWHq_l4vI2a": {
+      "createdAt": "2024-10-08T16:52:22.625Z",
+      "element": "<strong style=\"margin-bottom: 10px;\">Screw-in Spike (3x)</strong><p style=\"font-size: 1rem; margin-bottom: 15px;\">Spikes to attach to the bottom of the SF1000 to ensure better ground contact.</p><img src=\"http://localhost:5173/src/assets/help/Image_004.png\" style=\"max-width: 100%; height: auto; padding: 5px;\">",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "This is what I found: "
+    },
+    "-O8h1wm2495uiiCdt_Y-": {
+      "createdAt": "2024-10-08T16:52:22.626Z",
+      "link": "<a href=\"http://localhost:5173/help/pfmanual/#sf-spike\">Screw-in Spike</a>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "You can find more information here: "
+    },
+    "-O8h1wm9xS34APQ5rqWi": {
+      "createdAt": "2024-10-08T16:52:22.628Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Is there anything else I can assist you with?"
+    },
+    "-O8h1x2WXvggSRA6A_Vk": {
+      "createdAt": "2024-10-08T16:52:23.745Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Yes, I have another question"
+    },
+    "-O8h1x3Vg73zf_-WFlJK": {
+      "createdAt": "2024-10-08T16:52:23.768Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "How can I help you?"
+    },
+    "-O8h1xHO-uu8oqj6_TtM": {
+      "createdAt": "2024-10-08T16:52:24.693Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Setting up the Device"
+    },
+    "-O8h1xIQR1fPujq8eZwI": {
+      "createdAt": "2024-10-08T16:52:24.722Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h2spc3ctYeSXUU4jR": {
+      "createdAt": "2024-10-08T16:56:28.602Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h3BDEVPnxovHmUFvu": {
+      "createdAt": "2024-10-08T16:57:48.001Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h3CFWsN7iV2n7rK6W": {
+      "createdAt": "2024-10-08T16:57:52.256Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Attaching Ground Spikes"
+    },
+    "-O8h3CFxceUAbA_-VoJz": {
+      "createdAt": "2024-10-08T16:57:52.281Z",
+      "element": "<p class=\"p-3\">The Sonicfinder device comes with three screw-in spikes to ensure better ground contact. On the bottom of the SF1000, there are four holes to screw the spikes into. There are two possible configurations for the spikes: one central spike (Figure 1a) or a triangle along the outside edges (Figure 1b).</p><table><tbody><tr><td class=\"p-2 text-center align-top border border-slate-600\"><img src=\"/src/assets/help/Image_006.png\"><br><span class=\"text-xs italic\">Figure 1a. SF1000 single spike configuration.</span></td><td class=\"p-2 text-center align-top border border-slate-600\"><img src=\"/src/assets/help/Image_007.png\"><br><p class=\"text-xs italic\">Figure 1b. SF1000 triple spike configuration</p></td></tr></tbody></table>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "This is what I found: "
+    },
+    "-O8h3CG4CXllIl386H1K": {
+      "createdAt": "2024-10-08T16:57:52.282Z",
+      "link": "<a href=\"http://localhost:5173/help/pfmanual/#attaching-spikes\">Attaching Ground Spikes</a>",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "You can find more information here: "
+    },
+    "-O8h3CGGiJW-ZB54MgMV": {
+      "createdAt": "2024-10-08T16:57:52.283Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "Is there anything else I can assist you with?"
+    },
+    "-O8h3CWnGJJSUu3d9xuB": {
+      "createdAt": "2024-10-08T16:57:53.363Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Yes, I have another question"
+    },
+    "-O8h3CXjqfMpVNOo_yVI": {
+      "createdAt": "2024-10-08T16:57:53.386Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "How can I help you?"
+    },
+    "-O8h3ClqlRFDBK0AuAlT": {
+      "createdAt": "2024-10-08T16:57:54.392Z",
+      "name": "New Test",
+      "read": false,
+      "recipient": "1",
+      "sender": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "text": "Setting up the Device"
+    },
+    "-O8h3Cn1trtsjXjcFhpT": {
+      "createdAt": "2024-10-08T16:57:54.420Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h3Dnrv2o8sq0wwdkX": {
+      "createdAt": "2024-10-08T16:57:58.603Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    },
+    "-O8h3QN5XpJa-vLL5asO": {
+      "createdAt": "2024-10-08T16:58:50.080Z",
+      "name": "Chat Wizard",
+      "read": true,
+      "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+      "sender": "1",
+      "text": "What part of the setup process do you need help with?"
+    }
+  },
+  "-O8h3VuHBH7aTZgtzncT": {
+    "-O8h3WiX12345678": {
+      "createdAt": "2024-10-08T16:59:16.093Z",
+      "name": "Initial Inquiry",
+      "read": false,
+      "recipient": "1",
+      "sender": "A123B456C789",
+      "text": "General information request"
+    },
+    "-O8h3Wj12345678": {
+      "createdAt": "2024-10-08T16:59:16.129Z",
+      "element": "<p class=\"p-3\">This is a placeholder for further instructions.</p>",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Here is some guidance: "
+    },
+    "-O8h3WjD12345678": {
+      "createdAt": "2024-10-08T16:59:16.130Z",
+      "link": "<a href=\"#\">More details</a>",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Find additional info here: "
+    },
+    "-O8h3WjQ12345678": {
+      "createdAt": "2024-10-08T16:59:16.131Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Do you need anything else?"
+    },
+    "-O8h3ln12345678": {
+      "createdAt": "2024-10-08T17:00:21.958Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Is there anything more I can help with?"
+    },
+    "-O8h3wn12345678": {
+      "createdAt": "2024-10-08T17:01:06.979Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Do you have any further questions?"
+    },
+    "-O8h46I12345678": {
+      "createdAt": "2024-10-08T17:01:49.925Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Let me know if you need more assistance."
+    },
+    "-O8h4E312345678": {
+      "createdAt": "2024-10-08T17:02:21.748Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "I'm here to help if needed."
+    },
+    "-O8h4IO12345678": {
+      "createdAt": "2024-10-08T17:02:39.488Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Would you like further guidance?"
+    },
+    "-O8h5-o12345678": {
+      "createdAt": "2024-10-08T17:05:45.516Z",
+      "name": "New Inquiry",
+      "read": false,
+      "recipient": "1",
+      "sender": "A123B456C789",
+      "text": "Yes, I have another inquiry."
+    },
+    "-O8h5-p12345678": {
+      "createdAt": "2024-10-08T17:05:45.567Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "How may I assist you further?"
+    },
+    "-O8h50112345678": {
+      "createdAt": "2024-10-08T17:05:46.416Z",
+      "name": "New Inquiry",
+      "read": false,
+      "recipient": "1",
+      "sender": "A123B456C789",
+      "text": "Setting up the device"
+    },
+    "-O8h50212345678": {
+      "createdAt": "2024-10-08T17:05:46.445Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Which part of the setup would you like help with?"
+    },
+    "-O8h50Q12345678": {
+      "createdAt": "2024-10-08T17:05:47.996Z",
+      "name": "New Inquiry",
+      "read": false,
+      "recipient": "1",
+      "sender": "A123B456C789",
+      "text": "Adjusting sensitivity"
+    },
+    "-O8h50Qj12345678": {
+      "createdAt": "2024-10-08T17:05:48.030Z",
+      "element": "<p class=\"p-2\">Steps to adjust sensitivity:</p><ul class=\"p-3 list-decimal list-inside\"><li>Navigate to the settings menu.</li><li>Select 'Sensitivity Adjustment'.</li><li>Follow on-screen instructions to complete the adjustment.</li></ul>",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Here are the steps to adjust sensitivity: "
+    },
+    "-O8h50R12345678": {
+      "createdAt": "2024-10-08T17:05:48.031Z",
+      "link": "<a href=\"#\">Sensitivity Adjustment Guide</a>",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "You can read more about it here: "
+    },
+    "-O8h50R812345678": {
+      "createdAt": "2024-10-08T17:05:48.034Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Is there anything else I can help you with?"
+    },
+    "-O8h8lR12345678": {
+      "createdAt": "2024-10-08T17:22:11.122Z",
+      "name": "Support Bot",
+      "read": true,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Feel free to ask more questions."
+    },
+    "-OAOo3G12345678": {
+      "createdAt": "2024-10-29T19:45:57.504Z",
+      "name": "New Inquiry",
+      "read": false,
+      "recipient": "1",
+      "sender": "A123B456C789",
+      "text": "No thank you, that was helpful."
+    },
+    "-OAOo3H12345678": {
+      "createdAt": "2024-10-29T19:45:57.585Z",
+      "isCloseMessage": true,
+      "name": "Support Bot",
+      "read": false,
+      "recipient": "A123B456C789",
+      "sender": "1",
+      "text": "Thank you for using the chat service, this session is now closed."
+    }
+  }
+}

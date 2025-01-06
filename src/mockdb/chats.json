@@ -1,0 +1,154 @@
+{
+  "closed": {
+    "-O8h3VuHBH7aTZgtzncT": {
+      "csr": {
+        "authStatus": "active",
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "email": "",
+        "firstName": "Chat Wizard",
+        "lastName": "",
+        "phoneNumber": "",
+        "roles": [
+          "csr"
+        ],
+        "uid": "1"
+      },
+      "csrId": "1",
+      "lastMessage": {
+        "createdAt": "2024-10-29T19:45:57.585Z",
+        "isCloseMessage": true,
+        "name": "Chat Wizard",
+        "read": false,
+        "recipient": "XSiyYf2GywCVCo19B3KgM0C06AFD",
+        "sender": "1",
+        "text": "Thank you for using Soinas Chat Wizard, this chat is now closed"
+      },
+      "status": "closed",
+      "user": {
+        "authStatus": "active",
+        "clientId": "-O5sz-LvV_nmMPP6PIOw",
+        "email": "new@test.com",
+        "firstName": "New",
+        "lastName": "Test",
+        "phoneNumber": "+18798541256",
+        "roles": [
+          "user"
+        ],
+        "uid": "XSiyYf2GywCVCo19B3KgM0C06AFD"
+      },
+      "userClient": {
+        "clientId": "-O5sz-LvV_nmMPP6PIOw",
+        "location": {
+          "formattedAddress": "123 E 55th St, New York, NY 10022, USA",
+          "lat": 40.7600669,
+          "lng": -73.97054299999999,
+          "placeId": "ChIJ0U_wz-RYwokR6WIPPvQUaJE",
+          "url": "https://maps.google.com/?q=123+E+55th+St,+New+York,+NY+10022,+USA&ftid=0x89c258e4cff04fd1:0x916814f43e0f62e9"
+        },
+        "name": "Test"
+      },
+      "userId": "XSiyYf2GywCVCo19B3KgM0C06AFD"
+    }
+  },
+  "pending": {
+    "-P8f0yYLo0ytrPovyIKH": {
+      "csr": {
+        "authStatus": "pending",
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "email": "",
+        "firstName": "Pending Wizard",
+        "lastName": "",
+        "phoneNumber": "",
+        "roles": [
+          "csr"
+        ],
+        "uid": "2"
+      },
+      "csrId": "2",
+      "lastMessage": {
+        "createdAt": "2024-11-01T10:25:30.587Z",
+        "link": "<a href=\"http://localhost:5173/help/pfmanual/#setup\">Setup Instructions</a>",
+        "name": "Pending Wizard",
+        "read": false,
+        "recipient": "YDh5Xo8GywDPp29B7JkQK0L04CDB",
+        "sender": "2",
+        "text": "I'll be with you shortly."
+      },
+      "status": "pending",
+      "user": {
+        "authStatus": "active",
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "email": "pending@test.com",
+        "firstName": "Pending",
+        "lastName": "User",
+        "phoneNumber": "+14586741236",
+        "roles": [
+          "user"
+        ],
+        "uid": "YDh5Xo8GywDPp29B7JkQK0L04CDB"
+      },
+      "userClient": {
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "location": {
+          "formattedAddress": "456 W 44th St, Los Angeles, CA 90037, USA",
+          "lat": 34.0078901,
+          "lng": -118.2847855,
+          "placeId": "ChIJzU_zJ_YFwokR6WOPvTSHaJE",
+          "url": "https://maps.google.com/?q=456+W+44th+St,+Los+Angeles,+CA+90037,+USA&ftid=0x89c258e4cff04fd1:0x916814f43e0f62e9"
+        },
+        "name": "Pending Client"
+      },
+      "userId": "YDh5Xo8GywDPp29B7JkQK0L04CDB"
+    }
+  },
+  "active": {
+    "-A7d3pFGq5xrqDrvzIWM": {
+      "csr": {
+        "authStatus": "active",
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "email": "active.csr@test.com",
+        "firstName": "Active Support",
+        "lastName": "Agent",
+        "phoneNumber": "+1234567890",
+        "roles": [
+          "csr"
+        ],
+        "uid": "3"
+      },
+      "csrId": "3",
+      "lastMessage": {
+        "createdAt": "2024-11-01T15:40:10.080Z",
+        "name": "Active Support",
+        "read": false,
+        "recipient": "XDyhYf2GywFPo79B4KkA05L05GFD",
+        "sender": "3",
+        "text": "How can I help you today?"
+      },
+      "status": "active",
+      "user": {
+        "authStatus": "active",
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "email": "activeuser@test.com",
+        "firstName": "Active",
+        "lastName": "User",
+        "phoneNumber": "+19876543210",
+        "roles": [
+          "user"
+        ],
+        "uid": "XDyhYf2GywFPo79B4KkA05L05GFD"
+      },
+      "userClient": {
+        "clientId": "-O63N4MHBb-QPjEa9Ehg",
+        "location": {
+          "formattedAddress": "789 S Broadway, Denver, CO 80203, USA",
+          "lat": 39.7005498,
+          "lng": -104.9876063,
+          "placeId": "ChIJ0f_wx7VYwokR6WAPYvBUkJE",
+          "url": "https://maps.google.com/?q=789+S+Broadway,+Denver,+CO+80203,+USA&ftid=0x89c258e4cff04fd1:0x916814f43e0f62e9"
+        },
+        "name": "Active Client"
+      },
+      "userId": "XDyhYf2GywFPo79B4KkA05L05GFD"
+    }
+  }
+}

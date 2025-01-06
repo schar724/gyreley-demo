@@ -1,0 +1,24 @@
+[
+  {
+    "clientId": "-O5sz-LvV_nmMPP6PIOw",
+    "location": {
+      "formattedAddress": "123 Not a Street, Calgary, AB, Canada",
+      "lat": 40.7600669,
+      "lng": -73.97054299999999,
+      "placeId": "ChIJ0U_wz-RYwokR6WIPPvQUaJE",
+      "url": "https://maps.google.com/?q=123+E+55th+St,+New+York,+NY+10022,+USA&ftid=0x89c258e4cff04fd1:0x916814f43e0f62e9"
+    },
+    "name": "Client 1"
+  },
+  {
+    "clientId": "-O63N4MHBb-QPjEa9Ehg",
+    "location": {
+      "formattedAddress": "123 Fake St, Calgary, AB, Canada",
+      "lat": 51.2582629,
+      "lng": -114.0042112,
+      "placeId": "ChIJmeopOb9fcVMReH3vfpSQ_gw",
+      "url": "https://maps.google.com/?q=2966+Main+St+S,+Airdrie,+AB+T4B+3G5,+Canada&ftid=0x53715fbf3929ea99:0xcfe90947eef7d78"
+    },
+    "name": "Client 2"
+  }
+]
