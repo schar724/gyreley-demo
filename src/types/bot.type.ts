@@ -1,3 +1,3 @@
 export type Bot = {
-  name: "Solinas Chat Wizard";
+  name: "Gyreley Chat Wizard";
 };

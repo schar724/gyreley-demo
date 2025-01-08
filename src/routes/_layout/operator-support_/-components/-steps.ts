@@ -28,7 +28,7 @@ export const steps: Step[] = [
     question: "Is there anything else I can assist you with?",
     options: [
       {
-        label: "Yes, I'd like to chat with a Solinas Customer Service Agent",
+        label: "Yes, I'd like to chat with a Gyreley Customer Service Agent",
         nextStepId: sendRequestStep,
         onSelect: "sendRequest",
       },

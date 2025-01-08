@@ -8,5 +8,5 @@ export default defineConfig({
         preset: '2023',
     },
     preset,
-    images: ['public/g2047.png'],
+    images: ['public/gyreley_logo2.png'],
 })

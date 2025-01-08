@@ -56,7 +56,7 @@ export default function ChatHeader() {
             {`${recipient.firstName} ${recipient.lastName}`}
           </h3>
           <p className="text-sm text-foreground-muted truncate">
-            {recipientType === "csr" ? "Solinas" : chatData.userClient.name}
+            {recipientType === "csr" ? "Gyreley" : chatData.userClient.name}
           </p>
         </div>
       </div>

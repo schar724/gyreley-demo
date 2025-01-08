@@ -78,7 +78,7 @@ export default function SidebarNav({
                 <div className="flex-1 inset-y-0 left-0 z-50 block w-16 pb-4 overflow-y-auto bg-primary">
                   <div className="flex items-center justify-center h-16 shrink-0">
                     <Link to={nav && nav.dashboard[0].route}>
-                      <img className="w-8 h-8" src={LOGO} alt="Solinas Logo" />
+                      <img className="w-8 h-8" src={LOGO} alt="Gyreley Logo" />
                     </Link>
                   </div>
                   <nav className="mt-8">
@@ -105,7 +105,7 @@ export default function SidebarNav({
       <div className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:z-50 lg:block lg:w-16 pb-4 overflow-y-auto bg-primary">
         <div className="flex items-center justify-center h-16 shrink-0">
           <Link to={nav && nav.dashboard[0].route}>
-            <img className="w-auto h-8" src={LOGO} alt="Solinas Logo" />
+            <img className="w-auto h-8" src={LOGO} alt="Gyreley Logo" />
           </Link>
         </div>
         <nav className="mt-8">

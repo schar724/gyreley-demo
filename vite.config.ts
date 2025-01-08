@@ -50,9 +50,9 @@ export default defineConfig(({ mode }) => {
         },
 
         manifest: {
-          name: "Solinas",
-          short_name: "Solinas",
-          description: "Solinas customer support chat and help service",
+          name: "Gyreley",
+          short_name: "Gyreley",
+          description: "Gyreley customer support chat and help service",
           theme_color: "#ffffff",
           display: "standalone",
         },

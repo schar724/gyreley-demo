@@ -22,7 +22,7 @@ export default function LogoCard({
         id="header"
         className={`flex w-full flex-col items-center justify-center ${headerClassName}`}
       >
-        <img className="w-auto h-16" src={LOGO} alt="Solinas Logo" />
+        <img className="w-auto h-16" src={LOGO} alt="Gyreley Logo" />
         <h2 className="mt-5 text-lg text-center font-medium leading-6">
           {headerText}
         </h2>
