@@ -22,7 +22,6 @@ export default function ChatListContainer() {
   useEffect(() => {
     const data = getChats();
 
-    console.log("data ", data);
     setActiveChats(data.active);
     setPendingChats(data.pending);
     setClosedChats(data.closed);

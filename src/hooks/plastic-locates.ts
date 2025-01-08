@@ -20,7 +20,6 @@ export const addPlasticLocate = (item: PlasticLocate): PlasticLocate[] => {
   const locates = sessionStorageUtil.read<PlasticLocate[]>(PLASTIC_LOCATES_KEY);
   locates.push(item);
   sessionStorageUtil.write(PLASTIC_LOCATES_KEY, locates);
-  console.log('locates ', locates)
   return locates;
 };
 
@@ -39,7 +38,6 @@ export const updatePlasticLocate = (item: PlasticLocate): PlasticLocate[] => {
     (locate) => locate.plasticLocateId === item.plasticLocateId
   );
 
-  console.log('in item ', item)
 
   if (index !== -1) {
     locates[index] = item;

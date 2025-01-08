@@ -1,5 +1,9 @@
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
+import {
+  RouterProvider,
+  createRouter,
+  createHashHistory,
+} from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 import "./index.css";
 import { AuthProvider, useAuth } from "./context/AuthContext";
@@ -8,14 +12,16 @@ import { APIProvider } from "@vis.gl/react-google-maps";
 import { LoadingPage } from "./components/LoadingPage";
 import ErrorComponent from "./components/ErrorComponent";
 
+const hashHistory = createHashHistory();
+
 const router = createRouter({
   routeTree,
   context: {
     auth: undefined!,
   },
-
   defaultErrorComponent: ({ error }) => <ErrorComponent error={error} />,
   defaultPendingComponent: LoadingPage,
+  history: hashHistory,
 });
 
 declare module "@tanstack/react-router" {

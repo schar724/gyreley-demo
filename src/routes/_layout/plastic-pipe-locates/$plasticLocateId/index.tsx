@@ -50,8 +50,6 @@ export const Route = createFileRoute(
     const measurements = getMeasurements(params.plasticLocateId);
     const attachments = getAttachments(params.plasticLocateId);
 
-    console.log("attachments ", attachments);
-
     if (!locate || !locate.place) {
       return null;
     }

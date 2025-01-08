@@ -30,10 +30,7 @@ export const getAttachments = (plasticLocateId: string): Attachment[] => {
 };
 
 export const addAttachments = (plasticLocateId: string, clientId: string, files: File[]): Attachment[] => {
-  console.log('clientId ', clientId)
-  console.log('files ', files)
   const attachments = _readAttachments();
-  console.log('attachemnts read ', attachments)
   const newAttachments: Attachment[] = files.map((file) => {
     const id = `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
     return {

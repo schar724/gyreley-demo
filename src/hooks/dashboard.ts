@@ -21,14 +21,12 @@ export const getOperatorLocations = (): OperatorLocation[] => {
 };
 
 export const getTodaysLocates = (locates: PlasticLocate[]): PlasticLocate[] => {
-  console.log('lcoates ', locates)
   if (!locates) return [];
   const filtered = locates.filter(
     (locate) =>
       new Date(locate.scheduledDate).toDateString() ===
       new Date().toDateString()
   );
-  console.log('filtered ', filtered)
   return filtered
 };
 

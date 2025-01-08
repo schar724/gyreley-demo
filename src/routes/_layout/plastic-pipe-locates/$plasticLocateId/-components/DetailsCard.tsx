@@ -31,7 +31,6 @@ export default function DetailsCard({
   title,
   description,
 }: DetailsCardProps) {
-  console.log("data ", data);
   return (
     <div className="overflow-hidden bg-white shadow sm:rounded-lg">
       <div className="flex justify-between px-4 py-6 sm:px-6">

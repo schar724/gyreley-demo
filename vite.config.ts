@@ -4,12 +4,14 @@ import react from "@vitejs/plugin-react";
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import { fileURLToPath, URL } from "url";
 import { visualizer } from 'rollup-plugin-visualizer'
+import fs from 'fs'
+import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   console.log(`Running in ${mode} mode`);
 
   return {
-    base: "/gyreley-demo/",
+    base: mode === 'production' ? "/gyreley-demo" : "",
     build: {
       rollupOptions: {
         plugins: [],
@@ -24,43 +26,52 @@ export default defineConfig(({ mode }) => {
             'date-fns': ['date-fns']
           }
         }
-      }
+      },
+      emptyOutDir: true,
+      outDir: "dist"
     },
-    plugins: [visualizer({ open: true }),
-    TanStackRouterVite(),
-    react(),
-    VitePWA({
-      registerType: "autoUpdate",
-      injectRegister: "auto",
-
-      pwaAssets: {
-        disabled: false,
-        config: true,
+    plugins: [
+      {
+        name: 'add-nojekyll',
+        writeBundle() {
+          fs.writeFileSync(path.resolve(__dirname, 'dist/.nojekyll'), '')
+        }
       },
+      visualizer({ open: true }),
+      TanStackRouterVite(),
+      react(),
+      VitePWA({
+        registerType: "autoUpdate",
+        injectRegister: "auto",
 
-      manifest: {
-        name: "Solinas",
-        short_name: "Solinas",
-        description: "Solinas customer support chat and help service",
-        theme_color: "#ffffff",
-        display: "standalone",
-      },
+        pwaAssets: {
+          disabled: false,
+          config: true,
+        },
 
-      workbox: {
-        globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
-        cleanupOutdatedCaches: true,
-        clientsClaim: true,
-        navigateFallback: "index.html",
-        navigateFallbackDenylist: [/^\/completesignup/],
-      },
+        manifest: {
+          name: "Solinas",
+          short_name: "Solinas",
+          description: "Solinas customer support chat and help service",
+          theme_color: "#ffffff",
+          display: "standalone",
+        },
 
-      devOptions: {
-        enabled: mode === "development",
-        navigateFallback: "index.html",
-        suppressWarnings: false,
-        type: "module",
-      },
-    }),
+        workbox: {
+          globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
+          cleanupOutdatedCaches: true,
+          clientsClaim: true,
+          navigateFallback: "index.html",
+          navigateFallbackDenylist: [/^\/completesignup/],
+        },
+
+        devOptions: {
+          enabled: mode === "development",
+          navigateFallback: "index.html",
+          suppressWarnings: false,
+          type: "module",
+        },
+      }),
     ],
     resolve: {
       extensions: [

@@ -2,7 +2,7 @@
   "name": "gyreley-demo",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://schar724.github.io/gyreley-demo/",
+  "homepage": "https://schar724.github.io/gyreley-demo",
   "type": "module",
   "scripts": {
     "get-branch": "git rev-parse --abbrev-ref HEAD",
@@ -14,8 +14,7 @@
     "deploy": "bash -c 'BRANCH=$(npm run get-branch --silent) && BRANCH=${BRANCH/development/dev} && firebase use gyreley-$BRANCH && firebase deploy'",
     "emulators:test": "firebase emulators:start --import=./tests/emulator-data --export-on-exit=./tests/emulator-dump",
     "test": "firebase emulators:exec --import=./tests/emulator-data --export-on-exit=./tests/emulator-dump 'npx playwright test'",
-    "deploy:github2": "gh-pages -d dist --remove '.' --remove 'assets/**/*.png' --remove '**.*.png'",
-    "deploy:github": "gh-pages -d dist --no-history --remove 'assets/**/*.png' --remove '**.*.png'"
+    "deploy:github": "npm run build && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.6",
@@ -35,6 +34,7 @@
     "clsx": "^2.1.1",
     "firebase": "^10.13.0",
     "firebase-admin": "^12.4.0",
+    "gh-pages": "^6.3.0",
     "i": "^0.3.7",
     "jsdom": "^25.0.1",
     "npm": "^10.9.2",
@@ -66,7 +66,6 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.41",
     "rollup-plugin-visualizer": "^5.13.1",
     "tailwindcss": "^3.4.10",

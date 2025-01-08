@@ -21,7 +21,6 @@ export const Route = createFileRoute("/_layout/plastic-pipe-locates/")({
     plv: z.enum(["list", "map"]).catch("list"),
   }),
   loader: () => {
-    console.log("loading plastic locates...");
     return getPlasticLocates();
   },
   component: PlasticPipeLocates,
@@ -80,7 +79,6 @@ function PlasticPipeLocates(): JSX.Element {
         type="button"
         label="Add New"
         onClick={() => {
-          console.log("click");
           setIsNewLocateFormOpen(true);
         }}
       />

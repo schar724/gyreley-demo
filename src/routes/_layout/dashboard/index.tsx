@@ -26,7 +26,6 @@ export const Route = createFileRoute("/_layout/dashboard/")({
 export default function Dashboard() {
   const data = useLoaderData({ from: "/_layout/dashboard/" });
   const { clientId } = useAuth();
-  console.log("clientId ", clientId);
 
   if (!clientId) {
     return <></>;

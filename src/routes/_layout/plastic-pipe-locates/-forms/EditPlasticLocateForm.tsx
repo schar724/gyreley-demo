@@ -155,7 +155,6 @@ export default function EditPlasticPipeLocateForm({
     if (event.target.files && event.target.files.length > 0) {
       const file = event.target.files[0];
       if (file && user) {
-        console.log("setting");
         setAttachments((prev) => [...prev, file]);
       }
       event.target.value = "";
