@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => {
         globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
-        navigateFallback: "/gyreley-demo/index.html",
+        navigateFallback: "index.html",
         navigateFallbackDenylist: [/^\/completesignup/],
       },
 

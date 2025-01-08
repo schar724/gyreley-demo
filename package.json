@@ -14,7 +14,8 @@
     "deploy": "bash -c 'BRANCH=$(npm run get-branch --silent) && BRANCH=${BRANCH/development/dev} && firebase use gyreley-$BRANCH && firebase deploy'",
     "emulators:test": "firebase emulators:start --import=./tests/emulator-data --export-on-exit=./tests/emulator-dump",
     "test": "firebase emulators:exec --import=./tests/emulator-data --export-on-exit=./tests/emulator-dump 'npx playwright test'",
-    "deploy:github": "gh-pages -d dist --remove '.' --remove 'assets/**/*.png' --remove '**.*.png'"
+    "deploy:github2": "gh-pages -d dist --remove '.' --remove 'assets/**/*.png' --remove '**.*.png'",
+    "deploy:github": "gh-pages -d dist --no-history --remove 'assets/**/*.png' --remove '**.*.png'"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.6",
