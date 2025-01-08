@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/gyreley-demo/sw.js', { scope: '/gyreley-demo/' })})}
