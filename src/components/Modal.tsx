@@ -8,7 +8,6 @@ import {
 } from "@headlessui/react";
 import { ComponentType, Fragment, ReactNode, SVGAttributes } from "react";
 import Icon from "./Icon";
-import { useMobileContext } from "@/context/MobileContext";
 
 interface ModalProps {
   isOpen: boolean;
@@ -27,7 +26,6 @@ export default function Modal({
   icon = null,
   handleClose,
 }: ModalProps) {
-  const { mobile } = useMobileContext();
   return (
     <Transition show={isOpen} as={Fragment}>
       <Dialog
