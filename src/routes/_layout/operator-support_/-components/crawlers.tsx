@@ -1,5 +1,5 @@
 import * as DOM from "react-dom/server";
-import { PFManual } from "../../help_/pfmanual.lazy";
+import { PFManual } from "../../help_/pfmanual";
 
 function getEl(tagName: string) {
   const staticMarkup = DOM.renderToStaticMarkup(<PFManual />);
