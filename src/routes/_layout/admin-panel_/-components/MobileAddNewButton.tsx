@@ -5,7 +5,7 @@ import { Route as AdminBaseRoute } from "../index";
 
 type MobileAddButtonProps = {
   emo: boolean;
-  type: "User" | "Client";
+  type: "User" | "Client" | "list" | "map";
 };
 export default function MobileAddNewButton({
   emo,

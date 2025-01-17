@@ -1,8 +1,11 @@
 import { PlasticLocate } from "../../../../types/locate.type";
 import SortableTable from "../../../../components/SortableTable";
-import { Link } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { useMobileContext } from "@/context/MobileContext";
+import { StyleSheet, TouchableOpacity } from "react-native";
+import MobileAddNewButton from "../../admin-panel_/-components/MobileAddNewButton";
 
-type PlasticLocateListProps = {
+export type PlasticLocateListProps = {
   data: {
     locates: PlasticLocate[];
   };
@@ -14,6 +17,8 @@ export default function PlasticLocateList({
   data: { locates },
   handleEditLocate,
 }: PlasticLocateListProps): JSX.Element {
+  const { mobile } = useMobileContext();
+  const navigate = useNavigate();
   const columns = [
     {
       label: "Id",
@@ -45,7 +50,43 @@ export default function PlasticLocateList({
     { label: "Details", key: "contactDetail", sortable: false },
   ];
 
-  return (
+  return mobile ? (
+    <div className="h-full">
+      <nav aria-label="Directory" className="h-full overflow-y-auto">
+        {locates && (
+          <ul role="list" className="divide-y divide-gray-100">
+            {locates.map((item) => (
+              <li
+                key={item.identifier}
+                className="flex gap-x-4 px-3 py-5 shadow-md"
+              >
+                <TouchableOpacity
+                  style={styles.item}
+                  onPress={() => {
+                    navigate({
+                      to: `/plastic-pipe-locates/${item.plasticLocateId}`,
+                    });
+                  }}
+                >
+                  <div className="flex gap-x-4 items-center">
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold leading-6 text-gray-900">
+                        {item.place?.formattedAddress}
+                      </p>
+                      <p className="mt-1 truncate text-xs leading-5 text-gray-500">
+                        {item.inspectorName} - {item.inspectionStatusName}
+                      </p>
+                    </div>
+                  </div>
+                </TouchableOpacity>
+              </li>
+            ))}
+          </ul>
+        )}
+      </nav>
+      <MobileAddNewButton emo={true} type="list" />
+    </div>
+  ) : (
     <div className="h-full mt-5 overflow-y-auto bg-white rounded-lg">
       <div className="rounded-lg">
         <div className="px-4 rounded-lg sm:px-6 lg:px-8">
@@ -66,3 +107,10 @@ export default function PlasticLocateList({
     </div>
   );
 }
+
+const styles = StyleSheet.create({
+  item: {
+    flex: 1,
+    padding: 5,
+  },
+});

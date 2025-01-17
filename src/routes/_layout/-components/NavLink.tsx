@@ -1,3 +1,4 @@
+import { useMobileContext } from "@/context/MobileContext";
 import { Link as RouterLink } from "@tanstack/react-router";
 import { ReactNode } from "react";
 
@@ -12,10 +13,12 @@ export default function NavLink({
   children = null,
   title = "",
 }: NavLinkProps) {
+  const { toggleMobile } = useMobileContext();
   return (
     <RouterLink
-      to={`${to}`}
+      to={to}
       title={title}
+      {...(title === "Toggle Mobile" && { onClick: toggleMobile })}
       className="group nav-link"
       activeProps={{ className: "text-white bg-primary-active" }}
     >

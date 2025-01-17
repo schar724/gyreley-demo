@@ -4,10 +4,10 @@ import Icon from "@/components/Icon";
 import { Link } from "@tanstack/react-router";
 import { cn, generateProfilePhoto } from "@/utils";
 import { Bars3Icon, BellIcon } from "@heroicons/react/24/outline";
-import { isMobile } from "react-device-detect";
 import { NavStructure } from "@/types/nav.type";
 import { useAuth } from "@/context/AuthContext";
 import { useState } from "react";
+import { useMobileContext } from "@/context/MobileContext";
 
 type HeaderProps = {
   userStatus: "online" | "offline";
@@ -20,13 +20,14 @@ export default function Header({
   setSidebarOpen,
   nav,
 }: HeaderProps) {
+  const { mobile } = useMobileContext();
   const { user } = useAuth();
 
   const [notificationCount] = useState<number>(3);
 
   return (
     <div className="fixed w-full top-0 z-50 flex items-center h-16 px-4 bg-background border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-6">
-      {!!setSidebarOpen && !isMobile && (
+      {!!setSidebarOpen && !mobile && (
         <button
           type="button"
           onClick={() => setSidebarOpen(true)}

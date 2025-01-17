@@ -4,11 +4,13 @@ import {
   redirect,
 } from "@tanstack/react-router";
 import { AuthContext } from "../context/AuthContext";
+import { TMobileContext } from "@/context/MobileContext";
 import LogoCard from "@components/cards/LogoCard";
 import Button from "@/components/Button";
 
 export const Route = createRootRouteWithContext<{
   auth: AuthContext;
+  mobile: TMobileContext;
 }>()({
   beforeLoad: async ({ location }) => {
     if (location.pathname == "/") {

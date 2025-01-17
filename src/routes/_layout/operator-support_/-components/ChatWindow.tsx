@@ -1,16 +1,18 @@
 import SendMessage from "./SendMessage";
 import ChatHeader from "./ChatHeader";
-import { isMobile } from "react-device-detect";
 import ChatBox from "./ChatBox";
 import { useEffect, useState } from "react";
 import { RenderedMessage } from "@/types/chat.type";
 import { useSearch } from "@tanstack/react-router";
 import { getMessages } from "@/hooks/messages";
+import { Route } from "../index";
+import { useMobileContext } from "@/context/MobileContext";
 
 export default function ChatWindow() {
   const [messages, setMessages] = useState<RenderedMessage[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const search = useSearch({ from: "/_layout/operator-support_/" });
+  const search = useSearch({ from: Route.id });
+  const { mobile } = useMobileContext();
 
   useEffect(() => {
     setIsLoading(true);
@@ -29,7 +31,7 @@ export default function ChatWindow() {
     <div
       id="chat"
       className={`relative flex flex-col h-full overflow-hidden bg-slate-100 rounded-lg ${
-        isMobile ? "" : " shadow-md"
+        mobile ? "" : " shadow-md"
       }`}
     >
       <div className="relative flex flex-col h-full">

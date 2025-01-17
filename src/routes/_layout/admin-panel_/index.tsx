@@ -10,10 +10,10 @@ import Button from "@components/Button";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { z } from "zod";
 import { AdminPanelData, AdminPanelTab } from "@/types/admin-panel.type";
-import { isMobile } from "react-device-detect";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { cn } from "@/utils";
 import { loader } from "./-loader";
+import { useMobileContext } from "@/context/MobileContext";
 
 export const Route = createFileRoute("/_layout/admin-panel_/")({
   validateSearch: z.object({
@@ -31,6 +31,7 @@ export const Route = createFileRoute("/_layout/admin-panel_/")({
 function AdminPanel() {
   const navigate = useNavigate({ from: Route.to });
   const search = useSearch({ from: Route.id });
+  const { mobile } = useMobileContext();
   const {
     adminPanelData: { users, clients },
     tabs,
@@ -44,6 +45,8 @@ function AdminPanel() {
     }
     return <ErrorComponent error="Rendering Error" />;
   };
+
+  console.log("mobile in admin ", mobile);
 
   return (
     <HeaderCard
@@ -82,23 +85,23 @@ function AdminPanel() {
           <div className="flex items-baseline">
             <div className="flex items-start justify-between w-full">
               {/* Desktop Add Button */}
-              <div id="header-controls" className="hidden sm:block sm:ml-2">
-                <Button
-                  type="button"
-                  label={`Add New ${search.type}`}
-                  onClick={() => {
-                    navigate({
-                      search: {
-                        emo: true,
-                        type: search.type,
-                      },
-                    });
-                  }}
-                />
-              </div>
-
-              {/* Mobile Add Button */}
-              {!isMobile && (
+              {!mobile && (
+                <div id="header-controls" className="hidden sm:block sm:ml-2">
+                  <Button
+                    type="button"
+                    label={`Add New ${search.type}`}
+                    onClick={() => {
+                      navigate({
+                        search: {
+                          emo: true,
+                          type: search.type,
+                        },
+                      });
+                    }}
+                  />
+                </div>
+              )}
+              {!mobile && (
                 <div id="header-controls" className="ml-2 sm:hidden">
                   <Button
                     type="button"
@@ -120,6 +123,7 @@ function AdminPanel() {
             </div>
           </div>
         </div>
+        <hr className="mt-4" />
 
         <TabPanels
           id="tab-panels"

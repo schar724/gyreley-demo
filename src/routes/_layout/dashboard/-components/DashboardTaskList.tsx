@@ -1,9 +1,9 @@
 import { PlasticLocate } from "../../../../types/locate.type";
 import Card from "../../../../components/cards/Card";
 import SortableTable from "@/components/SortableTable";
-import { isMobile } from "react-device-detect";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { Link, useNavigate } from "@tanstack/react-router";
+import { useMobileContext } from "@/context/MobileContext";
 
 type DashboardTaskListProps = {
   data: PlasticLocate[];
@@ -14,6 +14,7 @@ export default function DashboardTaskList({
   data,
   clientId,
 }: DashboardTaskListProps) {
+  const { mobile } = useMobileContext();
   const navigate = useNavigate();
   const taskListColumns = [
     {
@@ -48,10 +49,12 @@ export default function DashboardTaskList({
   return (
     <Card className="">
       <div className="flex flex-col flex-1 w-full h-full overflow-hidden rounded-lg p-2">
-        <div>
-          <h1>Today's Tasks</h1>
-        </div>
-        {isMobile ? (
+        {mobile ? null : (
+          <div>
+            <h1>Today's Tasks</h1>
+          </div>
+        )}
+        {mobile ? (
           <div className="h-full">
             <nav aria-label="Directory" className="h-full overflow-y-auto">
               {data && (
@@ -59,13 +62,13 @@ export default function DashboardTaskList({
                   {data.map((item) => (
                     <li
                       key={item.identifier}
-                      className="flex gap-x-4 px-3 py-5"
+                      className="flex gap-x-4 px-3 py-5 shadow-md"
                     >
                       <TouchableOpacity
                         style={styles.item}
                         onPress={() => {
                           navigate({
-                            to: `/plastic-pipe-locate/locate/${item.plasticLocateId}`,
+                            to: `/plastic-pipe-locates/${item.plasticLocateId}`,
                           });
                         }}
                       >

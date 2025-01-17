@@ -5,9 +5,9 @@ import { useAuth } from "@/context/AuthContext";
 import ChatListContainer from "./_layout/-components/chatlist/ChatListContainer";
 import { useState } from "react";
 import Header from "./_layout/-components/Header";
-import { isMobile } from "react-device-detect";
 import BottomNav from "./_layout/-components/BottomNav";
 import SidebarNav from "./_layout/-components/SidebarNav";
+import { useMobileContext } from "@/context/MobileContext";
 
 export const Route = createFileRoute("/_layout")({
   beforeLoad: async ({ location }) => {
@@ -29,19 +29,20 @@ export default function Layout() {
   const { roles } = useAuth();
   const [userStatus] = useState<"online" | "offline">("online");
   const nav = roles ? useNavItems(roles) : undefined;
+  const { mobile } = useMobileContext();
 
   return (
     <div
-      className={`flex flex-col ${isMobile ? "h-[calc(100dvh-4rem)] w-dvw" : "h-dvh w-[calc(100dvw)] lg:w-[calc(100dvw-4rem)]"} `}
+      className={`flex flex-col ${mobile ? "h-[calc(100dvh-4rem)] w-dvw" : "h-dvh w-[calc(100dvw)] lg:w-[calc(100dvw-4rem)]"} `}
     >
-      <div className={`${isMobile && isSelectedChat ? "hidden" : "block"}`}>
+      <div className={`${mobile && isSelectedChat ? "hidden" : "block"}`}>
         <Header
           userStatus={userStatus}
           setSidebarOpen={setSidebarOpen}
           nav={nav}
         />
       </div>
-      {!isMobile && (
+      {!mobile && (
         <SidebarNav
           nav={nav}
           sidebarOpen={sidebarOpen}
@@ -49,10 +50,10 @@ export default function Layout() {
         />
       )}
 
-      {isMobile && <BottomNav nav={nav} />}
+      {mobile && <BottomNav nav={nav} />}
 
       <main
-        className={`flex h-full w-full overflow-hidden lg:ml-16  ${isMobile && isSelectedChat ? "mt-0" : "mt-16"}`}
+        className={`flex h-full w-full overflow-hidden lg:ml-16  ${mobile && isSelectedChat ? "mt-0" : "mt-16"}`}
       >
         {roles && roles.has("csr") ? (
           <div className="flex h-full w-full">

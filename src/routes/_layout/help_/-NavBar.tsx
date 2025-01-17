@@ -43,8 +43,8 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Menu as="div" className="relative inline-block text-left">
+          <div className="flex space-x-4 md:hidden">
+            <Menu as="div" className="relative inline-block">
               <div>
                 <MenuButton className="inline-flex justify-center w-full text-sm font-medium text-white rounded-md ">
                   <Icon icon={Bars3Icon} className="w-8 h-8" />

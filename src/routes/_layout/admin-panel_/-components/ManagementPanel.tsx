@@ -3,11 +3,11 @@ import SortableTable, { Column } from "@components/SortableTable";
 import Modal from "@/components/Modal";
 import StackedList from "@/components/StackedList";
 import MobileAddNewButton from "./MobileAddNewButton";
-import { isMobile } from "react-device-detect";
 import { PencilIcon, PlusIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Route } from "../index";
 import { generateProfilePhoto } from "@/utils";
+import { Route } from "../index";
+import { useMobileContext } from "@/context/MobileContext";
 
 // Define a common management props type
 export type ManagementPanelProps<T> = {
@@ -32,6 +32,7 @@ export default function ManagementPanel<T>({
   const [selectedEntity, setSelectedEntity] = useState<T | null>(null);
   const navigate = useNavigate({ from: Route.to });
   const search = useSearch({ from: Route.id });
+  const { mobile } = useMobileContext();
 
   function handleEditEntity(entity: T | null) {
     setSelectedEntity(entity);
@@ -63,9 +64,11 @@ export default function ManagementPanel<T>({
         )
       : generateProfilePhoto((entity as any).name);
 
+  console.log("mobile in managmenent panel ", mobile);
+
   return (
     <div className="flex flex-col flex-1 w-full h-full overflow-hidden rounded-lg">
-      {isMobile ? (
+      {mobile ? (
         <div className="h-full">
           <StackedList
             directory={directoryCreator(data)}

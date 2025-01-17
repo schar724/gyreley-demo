@@ -8,8 +8,6 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { createFileRoute } from '@tanstack/react-router'
-
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
@@ -22,15 +20,10 @@ import { Route as LayoutHelpIndexImport } from './routes/_layout/help_/index'
 import { Route as LayoutDashboardIndexImport } from './routes/_layout/dashboard/index'
 import { Route as LayoutAdminPanelIndexImport } from './routes/_layout/admin-panel_/index'
 import { Route as LayoutHelpQuickstartImport } from './routes/_layout/help_/quickstart'
+import { Route as LayoutHelpPfmanualImport } from './routes/_layout/help_/pfmanual'
 import { Route as LayoutHelpFaqImport } from './routes/_layout/help_/faq'
 import { Route as LayoutHelpDownloadsImport } from './routes/_layout/help_/downloads'
 import { Route as LayoutPlasticPipeLocatesPlasticLocateIdIndexImport } from './routes/_layout/plastic-pipe-locates/$plasticLocateId/index'
-
-// Create Virtual Routes
-
-const LayoutHelpPfmanualLazyImport = createFileRoute(
-  '/_layout/help_/pfmanual',
-)()
 
 // Create/Update Routes
 
@@ -84,17 +77,15 @@ const LayoutAdminPanelIndexRoute = LayoutAdminPanelIndexImport.update({
   getParentRoute: () => LayoutRoute,
 } as any)
 
-const LayoutHelpPfmanualLazyRoute = LayoutHelpPfmanualLazyImport.update({
-  id: '/pfmanual',
-  path: '/pfmanual',
-  getParentRoute: () => LayoutHelpRouteRoute,
-} as any).lazy(() =>
-  import('./routes/_layout/help_/pfmanual.lazy').then((d) => d.Route),
-)
-
 const LayoutHelpQuickstartRoute = LayoutHelpQuickstartImport.update({
   id: '/quickstart',
   path: '/quickstart',
+  getParentRoute: () => LayoutHelpRouteRoute,
+} as any)
+
+const LayoutHelpPfmanualRoute = LayoutHelpPfmanualImport.update({
+  id: '/pfmanual',
+  path: '/pfmanual',
   getParentRoute: () => LayoutHelpRouteRoute,
 } as any)
 
@@ -156,18 +147,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutHelpFaqImport
       parentRoute: typeof LayoutHelpRouteImport
     }
+    '/_layout/help_/pfmanual': {
+      id: '/_layout/help_/pfmanual'
+      path: '/pfmanual'
+      fullPath: '/help/pfmanual'
+      preLoaderRoute: typeof LayoutHelpPfmanualImport
+      parentRoute: typeof LayoutHelpRouteImport
+    }
     '/_layout/help_/quickstart': {
       id: '/_layout/help_/quickstart'
       path: '/quickstart'
       fullPath: '/help/quickstart'
       preLoaderRoute: typeof LayoutHelpQuickstartImport
-      parentRoute: typeof LayoutHelpRouteImport
-    }
-    '/_layout/help_/pfmanual': {
-      id: '/_layout/help_/pfmanual'
-      path: '/pfmanual'
-      fullPath: '/help/pfmanual'
-      preLoaderRoute: typeof LayoutHelpPfmanualLazyImport
       parentRoute: typeof LayoutHelpRouteImport
     }
     '/_layout/admin-panel_/': {
@@ -220,16 +211,16 @@ declare module '@tanstack/react-router' {
 interface LayoutHelpRouteRouteChildren {
   LayoutHelpDownloadsRoute: typeof LayoutHelpDownloadsRoute
   LayoutHelpFaqRoute: typeof LayoutHelpFaqRoute
+  LayoutHelpPfmanualRoute: typeof LayoutHelpPfmanualRoute
   LayoutHelpQuickstartRoute: typeof LayoutHelpQuickstartRoute
-  LayoutHelpPfmanualLazyRoute: typeof LayoutHelpPfmanualLazyRoute
   LayoutHelpIndexRoute: typeof LayoutHelpIndexRoute
 }
 
 const LayoutHelpRouteRouteChildren: LayoutHelpRouteRouteChildren = {
   LayoutHelpDownloadsRoute: LayoutHelpDownloadsRoute,
   LayoutHelpFaqRoute: LayoutHelpFaqRoute,
+  LayoutHelpPfmanualRoute: LayoutHelpPfmanualRoute,
   LayoutHelpQuickstartRoute: LayoutHelpQuickstartRoute,
-  LayoutHelpPfmanualLazyRoute: LayoutHelpPfmanualLazyRoute,
   LayoutHelpIndexRoute: LayoutHelpIndexRoute,
 }
 
@@ -265,8 +256,8 @@ export interface FileRoutesByFullPath {
   '/help': typeof LayoutHelpRouteRouteWithChildren
   '/help/downloads': typeof LayoutHelpDownloadsRoute
   '/help/faq': typeof LayoutHelpFaqRoute
+  '/help/pfmanual': typeof LayoutHelpPfmanualRoute
   '/help/quickstart': typeof LayoutHelpQuickstartRoute
-  '/help/pfmanual': typeof LayoutHelpPfmanualLazyRoute
   '/admin-panel': typeof LayoutAdminPanelIndexRoute
   '/dashboard': typeof LayoutDashboardIndexRoute
   '/help/': typeof LayoutHelpIndexRoute
@@ -280,8 +271,8 @@ export interface FileRoutesByTo {
   '/permission-denied': typeof PermissionDeniedRoute
   '/help/downloads': typeof LayoutHelpDownloadsRoute
   '/help/faq': typeof LayoutHelpFaqRoute
+  '/help/pfmanual': typeof LayoutHelpPfmanualRoute
   '/help/quickstart': typeof LayoutHelpQuickstartRoute
-  '/help/pfmanual': typeof LayoutHelpPfmanualLazyRoute
   '/admin-panel': typeof LayoutAdminPanelIndexRoute
   '/dashboard': typeof LayoutDashboardIndexRoute
   '/help': typeof LayoutHelpIndexRoute
@@ -297,8 +288,8 @@ export interface FileRoutesById {
   '/_layout/help_': typeof LayoutHelpRouteRouteWithChildren
   '/_layout/help_/downloads': typeof LayoutHelpDownloadsRoute
   '/_layout/help_/faq': typeof LayoutHelpFaqRoute
+  '/_layout/help_/pfmanual': typeof LayoutHelpPfmanualRoute
   '/_layout/help_/quickstart': typeof LayoutHelpQuickstartRoute
-  '/_layout/help_/pfmanual': typeof LayoutHelpPfmanualLazyRoute
   '/_layout/admin-panel_/': typeof LayoutAdminPanelIndexRoute
   '/_layout/dashboard/': typeof LayoutDashboardIndexRoute
   '/_layout/help_/': typeof LayoutHelpIndexRoute
@@ -315,8 +306,8 @@ export interface FileRouteTypes {
     | '/help'
     | '/help/downloads'
     | '/help/faq'
-    | '/help/quickstart'
     | '/help/pfmanual'
+    | '/help/quickstart'
     | '/admin-panel'
     | '/dashboard'
     | '/help/'
@@ -329,8 +320,8 @@ export interface FileRouteTypes {
     | '/permission-denied'
     | '/help/downloads'
     | '/help/faq'
-    | '/help/quickstart'
     | '/help/pfmanual'
+    | '/help/quickstart'
     | '/admin-panel'
     | '/dashboard'
     | '/help'
@@ -344,8 +335,8 @@ export interface FileRouteTypes {
     | '/_layout/help_'
     | '/_layout/help_/downloads'
     | '/_layout/help_/faq'
-    | '/_layout/help_/quickstart'
     | '/_layout/help_/pfmanual'
+    | '/_layout/help_/quickstart'
     | '/_layout/admin-panel_/'
     | '/_layout/dashboard/'
     | '/_layout/help_/'
@@ -399,8 +390,8 @@ export const routeTree = rootRoute
       "children": [
         "/_layout/help_/downloads",
         "/_layout/help_/faq",
-        "/_layout/help_/quickstart",
         "/_layout/help_/pfmanual",
+        "/_layout/help_/quickstart",
         "/_layout/help_/"
       ]
     },
@@ -412,12 +403,12 @@ export const routeTree = rootRoute
       "filePath": "_layout/help_/faq.tsx",
       "parent": "/_layout/help_"
     },
-    "/_layout/help_/quickstart": {
-      "filePath": "_layout/help_/quickstart.tsx",
+    "/_layout/help_/pfmanual": {
+      "filePath": "_layout/help_/pfmanual.tsx",
       "parent": "/_layout/help_"
     },
-    "/_layout/help_/pfmanual": {
-      "filePath": "_layout/help_/pfmanual.lazy.tsx",
+    "/_layout/help_/quickstart": {
+      "filePath": "_layout/help_/quickstart.tsx",
       "parent": "/_layout/help_"
     },
     "/_layout/admin-panel_/": {

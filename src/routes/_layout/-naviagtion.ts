@@ -5,6 +5,7 @@ import {
   ChatBubbleLeftRightIcon,
   HomeIcon,
   ClipboardIcon,
+  DevicePhoneMobileIcon,
 } from "@heroicons/react/24/outline";
 import { NavItem, NavStructure } from "@/types/nav.type";
 import { Role } from "@/types/role.type";
@@ -15,8 +16,9 @@ const adminPanelKey: string = "adminPanel";
 const operatorSupportKey: string = "operatorSupport";
 const helpKey: string = "help";
 const settingsKey: string = "settings";
+const toggleMobileKey: string = "toggleMobile";
 
-const navItems = {
+const navItems: { [key: string]: NavItem } = {
   dashboard: {
     name: "Dashboard",
     route: "/dashboard",
@@ -47,6 +49,12 @@ const navItems = {
     icon: QuestionMarkCircleIcon,
     key: helpKey,
   },
+  toggleMobile: {
+    name: "Toggle Mobile",
+    route: ".",
+    icon: DevicePhoneMobileIcon,
+    key: toggleMobileKey,
+  }
 };
 
 export const useNavItems = (roles: Set<Role>): NavStructure => {

@@ -121,5 +121,10 @@ export default defineConfig(({ mode }) => {
         loader: { ".js": "jsx" },
       },
     },
+    server: {
+      headers: {
+        'x-frame-options': 'ALLOWALL'
+      }
+    },
   };
 });

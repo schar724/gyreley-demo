@@ -1,10 +1,15 @@
 import { ComponentType, SVGAttributes } from "react";
+import { router } from '../main'
+
+export type RouteType = typeof router;
 
 export interface NavItem {
   name: string;
   route?: string;
   icon?: ComponentType<SVGAttributes<SVGElement>>;
   children?: NavItem[];
+  key: string;
+  search?: boolean;
 }
 
 export interface NavStructure {

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { InspectionStat } from "../../../../types/stats.type";
-import { isMobile } from "react-device-detect";
+import { useMobileContext } from "@/context/MobileContext";
 
 type InspectionStatsProps = {
   data: InspectionStat[];
@@ -11,22 +11,23 @@ export default function InspectionStats({
   data,
   clientId,
 }: InspectionStatsProps) {
+  const { mobile } = useMobileContext();
   if (!clientId) {
     return <></>;
   }
 
   return (
     <div className="my-5 w-full">
-      {isMobile ? (
+      {mobile ? (
         <dl className="flex flex-row w-full">
           {data.map((item) => (
-            <dt className="flex mx-auto shadow-md rounded-md">
+            <dt key={item.id} className="flex mx-auto shadow-md rounded-md">
               <Link
                 to={`/plastic-pipe-locates`}
                 key={item.id}
                 activeProps={{ className: "bg-indigo-600" }}
               >
-                <div className="p-6 bg-indigo-500 rounded-md">
+                <div className="p-4 bg-indigo-500 rounded-md">
                   <item.icon className="w-6 h-6 text-white" />
                 </div>
               </Link>

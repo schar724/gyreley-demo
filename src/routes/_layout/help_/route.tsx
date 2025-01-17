@@ -1,9 +1,9 @@
-import { createFileRoute, Outlet } from '@tanstack/react-router'
-import NavBar from './-NavBar'
+import { createFileRoute, Outlet } from "@tanstack/react-router";
+import NavBar from "./-NavBar";
 
-export const Route = createFileRoute('/_layout/help_')({
+export const Route = createFileRoute("/_layout/help_")({
   component: HelpPage,
-})
+});
 
 function HelpPage() {
   return (
@@ -13,5 +13,5 @@ function HelpPage() {
         <Outlet />
       </div>
     </div>
-  )
+  );
 }

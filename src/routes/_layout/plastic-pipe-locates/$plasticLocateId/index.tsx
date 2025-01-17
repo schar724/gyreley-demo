@@ -185,8 +185,8 @@ function RouteComponent() {
           </Map>
         )}
       </div>
-      <div className="flex mt-5 gap-x-2">
-        <div className="w-1/2">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-x-2">
+        <div className="">
           <DetailsCard
             title={"Locate Information"}
             data={data.locateData}
@@ -194,14 +194,14 @@ function RouteComponent() {
             handleClick={setStatus}
           />
         </div>
-        <div className="w-1/2">
+        <div className="">
           <DetailsCard
             title={"Completion Details"}
             data={data.pipeData}
             description={"Completion Data"}
           />
         </div>
-        <div className="w-1/2">
+        <div className="">
           <DetailsCard
             title={"Location Information"}
             data={data.placeData}
@@ -209,8 +209,8 @@ function RouteComponent() {
           />
         </div>
       </div>
-      <div className="flex mt-5 gap-x-2">
-        <div className="w-1/2">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-x-2">
+        <div className="">
           {data.attachments[0] && (
             <AttachmentsCard attachmentData={data.attachments} />
           )}
